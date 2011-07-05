@@ -61,7 +61,7 @@ blog.name = "RenneRocha"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
-blog.description = "Compartilhando o que eu faço no meu tempo livre (ou nem tão livre assim)"
+blog.description = u"Compartilhando o que eu faço no meu tempo livre (ou nem tão livre assim)"
 
 ## blog_timezone -- the timezone that you normally write your blog posts from
 blog.timezone = "America/Sao_Paulo"
