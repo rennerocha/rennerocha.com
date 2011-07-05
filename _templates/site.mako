@@ -8,26 +8,18 @@
   </head>
   <body>
     <div id="content">
-      ${self.header()}
+      <div id="sidebar">
+        ${self.sidebar()}
+      </div> <!-- End Sidebar -->
       <div id="main_block">
-        <div id="prose_block">
-          ${next.body()}
-        </div><!-- End Prose Block -->
+        ${next.body()}
       </div><!-- End Main Block -->
-      <div id="footer">
-        ${self.footer()}
-      </div> <!-- End Footer -->
     </div> <!-- End Content -->
   </body>
 </html>
 <%def name="head()">
   <%include file="head.mako" />
 </%def>
-<%def name="header()">
-  <%include file="header.mako" />
-</%def>
-<%def name="footer()">
-  <hr/>
-  This is a footer that appears on every page.
-  <%include file="footer.mako" />
+<%def name="sidebar()">
+  <%include file="sidebar.mako" />
 </%def>
