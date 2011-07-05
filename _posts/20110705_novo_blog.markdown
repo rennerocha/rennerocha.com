@@ -1,0 +1,40 @@
+---
+author: Renne Rocha
+categories: Python
+tags: blog, blogofile
+date: 2011/07/05 18:13:00
+title: Recomeçando o blog
+---
+Desde que comecei a escrever este blog tenho utilizado o Wordpress para a 
+publicação dos meus posts. Apesar da maioria dos blogs utilizarem esta 
+plataforma, eu comecei a achar complicado fazer algumas modificações simples 
+na organização do meu blog. Então comecei a procurar algumas alternativas 
+(em Python principalmente, já que é a minha linguagem de preferência).
+
+Surgiram algumas opções em cima de frameworks Python mais famosos (como Django e 
+web2py), porém ainda estava achando que iria utilizar muito pouco de todas 
+aquelas funcionalidades disponíveis já que eu não publico com uma 
+freqüência grande e nem tenho um grande número de visitantes.
+
+Então, navegando pelo blog do <a href="http://dougalmatthews.com">Dougal Matthews</a>
+(um britânico que escreve alguns artigos interessantes sobre Python e 
+Django) vi que ele não usava nenhuma dessas plataformas para gerenciar 
+o seu blog e sim o <a href="http://www.blogofile.com/">Blogofile</a>,
+que basicamente é um gerador de páginas estáticas.
+
+Utilizando Python, a linguagem de templates Mako e uma arquitetura 
+padronizada eu posso criar os meus posts e páginas usando um simples
+editor de texto (estou usando o vim para escrever este post). Em seguida 
+eu executo um build e obtenho um diretório com todo o meu blog em um 
+conjunto de arquivos estáticos que eu posso publicar facilmente em qualquer 
+servidor de hospedagem.
+
+Não preciso me preocupar com bancos de dados ou um servidor wsgi 
+para o meu blog ser publicado. Um simples servidor web (como o Apache) é suficiente.
+
+Como cada post é apenas um arquivo texto, o backup de todo o meu blog fica 
+muito simplificado (no meu caso é apenas um repositório git onde armazeno todos 
+os meus códigos e arquivos).
+
+Eu sei que vou perder um conjunto de funcionalidades interessantes, mas por enquanto 
+esta parece ser uma solução adequada para as minhas necessidades.
