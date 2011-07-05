@@ -19,7 +19,26 @@
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site.url = "http://www.yoursite.com"
+site.url = "http://rennerocha.com.com"
+
+# This is a list of regular expressions that describe paths to ignore when 
+# processing your source directory
+site.file_ignore_patterns = [
+    # All files that start with an underscore
+    ".*/_.*",
+    # Emacs temporary files
+    ".*/#.*",
+    # Emacs/Vim temporary files
+    ".*~$",
+    # Vim swap files
+    ".*/\..*\.swp$",
+    # VCS directories
+    ".*/\.(git|hg|svn|bzr)$",
+    # Git and Mercurial ignored files definitions
+    ".*/.(git|hg)ignore$",
+    # CVS dir
+    ".*/CVS$",
+]
 
 #### Blog Settings ####
 blog = controllers.blog
@@ -34,15 +53,18 @@ blog.enabled = True
 #  and you set blog_path to "/blog" your full blog URL would be
 #  "http://www.yoursite.com/~ryan/blog"
 #  Leave blank "" to set to the root of site_url
-blog.path = "/blog"
+blog.path = ""
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
-blog.name = "Your Blog's Name"
+blog.name = "RenneRocha"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
-blog.description = "Your Blog's short description"
+blog.description = "Compartilhando o que eu faço no meu tempo livre (ou nem tão livre assim)"
 
 ## blog_timezone -- the timezone that you normally write your blog posts from
-blog.timezone = "US/Eastern"
+blog.timezone = "America/Sao_Paulo"
+
+## blog_posts_per_page -- the number of blog posts you want to display per page
+blog.posts_per_page = 1
