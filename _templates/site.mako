@@ -7,11 +7,11 @@
     ${self.head()}
   </head>
   <body>
-    <div id="content">
-      <div id="sidebar">
+    <div id="content" class="container_16">
+      <div id="sidebar" class="grid_4">
         ${self.sidebar()}
       </div> <!-- End Sidebar -->
-      <div id="main_block">
+      <div id="main_block" class="grid_12">
         ${next.body()}
       </div><!-- End Main Block -->
     </div> <!-- End Content -->
