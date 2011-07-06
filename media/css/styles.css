@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+#sidebar {
+    background: #c2c2c2;
+    min-height: 100%;
+}
