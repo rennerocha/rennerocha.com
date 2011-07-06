@@ -4,11 +4,9 @@
 
 <div id="sidebar_menu">
   <ul>
-    <li>Início</li>
-    <li>Sobre</li>
+    <li><a href="/">Início</a></li>
   </ul>
 </div>
 
 <div id="sidebar_footer">
-  Desenvolvido com Blogofile
 </div>

@@ -1,9 +1,17 @@
 body {
     margin: 0px;
-    height: 100%;
+    background: #f8f8f8;
+    font-family: 'Droid Sans Mono';
+    font-size: 12px;
 }
 
-#sidebar {
-    background: #c2c2c2;
-    min-height: 100%;
+#sidebar h1 {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 3px #f8f8f8;
+}
+
+#main_block {
+    padding: 15px;
+    background: #ffffff;
 }

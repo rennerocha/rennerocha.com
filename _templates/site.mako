@@ -11,9 +11,11 @@
       <div id="sidebar" class="grid_4">
         ${self.sidebar()}
       </div> <!-- End Sidebar -->
-      <div id="main_block" class="grid_12">
-        ${next.body()}
-      </div><!-- End Main Block -->
+      <div class="grid_12">
+        <div id="main_block">
+          ${next.body()}
+        </div><!-- End Main Block -->
+      </div>
     </div> <!-- End Content -->
   </body>
 </html>
