@@ -2,7 +2,7 @@
 <div class="blog_post">
   <a name="${post.slug}"></a>
   <h2 class="blog_post_title"><a href="${post.permapath()}" rel="bookmark" title="Permanent Link to ${post.title}">${post.title}</a></h2>
-  <small>${post.date.strftime("%B %d, %Y at %I:%M %p")} | categories: 
+  <small>${post.date.strftime("%d-%m-%Y - %I:%M %p")} | categorias: 
 <% 
    category_links = []
    for category in post.categories:
@@ -25,3 +25,11 @@ ${", ".join(category_links)}
 <%def name="post_prose(post)">
   ${post.content}
 </%def>
+
+<hr/>
+<p>Todos artigos</p>
+<ul>
+% for post in bf.config.blog.posts:
+    <li><a href="${post.path}">${post.title}</a></li>
+% endfor
+</ul>
