@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re
 import os
 
@@ -98,7 +99,7 @@ def highlight_code(code, language, formatter):
         lexer = pygments.lexers.get_lexer_by_name("text")
     #Highlight with pygments and surround by blank lines
     #(blank lines required for markdown syntax)
-    highlighted = "\n\n{0}\n\n".format(
+    highlighted = u"\n\n{0}\n\n".format(
             pygments.highlight(code, lexer, formatter))
     return highlighted
 
