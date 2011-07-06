@@ -19,7 +19,7 @@
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site.url = "http://rennerocha.com.com"
+site.url = "http://rennerocha.com"
 
 # This is a list of regular expressions that describe paths to ignore when 
 # processing your source directory
@@ -57,7 +57,7 @@ blog.path = ""
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
-blog.name = "RenneRocha"
+blog.name = "Renne Rocha"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
