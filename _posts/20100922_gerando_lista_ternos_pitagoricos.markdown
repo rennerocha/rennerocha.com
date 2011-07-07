@@ -3,7 +3,7 @@ author: Renne Rocha
 categories: Python, Django
 date: 2010/09/22 23:12:03
 permalink: http://rennerocha.com/2010/09/gerando-uma-lista-de-ternos-pitagoricos-pythagorean-triplet/
-title: Gerando uma lista de Ternos Pitagóricos (Pythagirean Triplet)
+title: Gerando uma lista de Ternos Pitagóricos (Pythagorean Triplet)
 ---
 Hoje, depois de apanhar bastante com o plugin FLOT do jQuery, resolvi entrar no site do Projeto 
 Euler para gastar um tempinho resolvendo algum problema e refrescar a cabeça um pouco (pelo menos 
