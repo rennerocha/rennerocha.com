@@ -5,6 +5,7 @@
 <div id="sidebar_menu">
   <ul>
     <li><a href="/">Início</a></li>
+    <li><a href="/sobre">Sobre</a></li>
   </ul>
 </div>
 
