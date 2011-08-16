@@ -2,7 +2,7 @@
 
 <h2>Sobre o autor</h2>
 
-<p>Meu nome é Renne, sou estudante de <a href="http://www.fee.unicamp.br">Engenharia Elétrica</a> na <a href="http://www.unicamp.br/">Universidade Estadual de Campinas</a> e atuo profissionalmente a mais de 7 anos no desenvolvimento de software. Atualmente tenho utilizado como ferramentas principalmente (mas não apenas) a linguagem Python junto com o framework web Django, além de realizar alguns trabalhos em Java e C.</p>
+<p>Meu nome é Renne, sou estudante de <a href="http://www.fee.unicamp.br">Engenharia Elétrica</a> na <a href="http://www.unicamp.br/">Universidade Estadual de Campinas</a> e atuo profissionalmente a mais de 7 anos no desenvolvimento de software. Atualmente tenho utilizado como ferramentas principalmente (mas não apenas) a linguagem Python junto com o framework web Django, além de realizar alguns trabalhos em Java e C...</p>
 
 <p>Também participo desde o início do grupo de Coding Dojo de Campinas, onde programadores se encontram quase toda semana para praticar boas práticas de desenvolvimento de software. Da participação nesse grupo desenvolvi o site <a href="http://dojopuzzles.com/">DojoPuzzles.com</a> para ser utilizado como fonte de problemas de programação (utilizando Python/Django).</p>
 
