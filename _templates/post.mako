@@ -27,6 +27,20 @@ ${", ".join(category_links)}
 </%def>
 
 <hr/>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'rennerocha';
+    var disqus_developer = 0;
+    var disqus_identifier = "${post.slug}";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<hr/>
 <p>Todos artigos</p>
 <ul>
 % for post in bf.config.blog.posts:
