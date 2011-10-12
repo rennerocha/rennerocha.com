@@ -68,3 +68,10 @@ blog.timezone = "America/Sao_Paulo"
 
 ## blog_posts_per_page -- the number of blog posts you want to display per page
 blog.posts_per_page = 1
+
+## blog_disqus_enabled -- Should I use Disqus comment system?
+blog.disqus.enabled = False
+
+## blog_disqus_name -- The disqus website 'short name'
+blog.disqus.name = "rennerocha"
+
