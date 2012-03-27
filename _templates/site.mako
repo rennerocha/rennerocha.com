@@ -1,27 +1,36 @@
 <%inherit file="base.mako" />
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    ${self.head()}
-  </head>
+<!DOCTYPE html>
+<html lang="pt">
+  <head>${self.head()}</head>
+
   <body>
-    <div id="content" class="container_16">
-      <div id="sidebar" class="grid_4">
-        ${self.sidebar()}
-      </div> <!-- End Sidebar -->
-      <div class="grid_12">
-        <div id="main_block">
-          ${next.body()}
-        </div><!-- End Main Block -->
+    <div id="header">
+      <h1>Renne Rocha</h1>
+    </div>
+
+    <div id="main">
+      <div id="content">
+        ${next.body()}
+	  </div>
+
+      <div id="siderbar">
+        <div id="nav">
+          <ul>
+            <li><a href="/">In&iacute;cio</a></li>
+            <li><a href="/arquivo">Arquivo</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/projetos">Projetos</a></li>
+            <li><a href="http://twitter.com/rennerocha">Twitter</a></li>
+            <li><a href="/rss">RSS</a></li>
+          </ul>
+        </div>
       </div>
-    </div> <!-- End Content -->
+
+      <div id="footer">Este blog est&aacute; hospedado na <a href="http://www.webfaction.com?affiliate=rennerocha">WebFaction</a>.</div>
+    </div>
   </body>
 </html>
+
 <%def name="head()">
   <%include file="head.mako" />
-</%def>
-<%def name="sidebar()">
-  <%include file="sidebar.mako" />
 </%def>

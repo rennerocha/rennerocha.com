@@ -112,6 +112,11 @@ body {
     margin-left: 0px;
 }
 
+#content .post_date span {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 #content a {
     text-decoration: none;
     color: #E91B1B;

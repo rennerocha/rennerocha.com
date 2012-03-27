@@ -1,37 +1,27 @@
 <%page args="post"/>
-<div class="blog_post">
-  <a name="${post.slug}"></a>
-  <h2 class="blog_post_title"><a href="${post.permapath()}" rel="bookmark" title="Permanent Link to ${post.title}">${post.title}</a></h2>
-  <small>${post.date.strftime("%d-%m-%Y - %I:%M %p")} | categorias: 
-<% 
-   category_links = []
-   for category in post.categories:
-       if post.draft:
-           #For drafts, we don't write to the category dirs, so just write the categories as text
-           category_links.append(category.name)
-       else:
-           category_links.append("<a href='%s'>%s</a>" % (category.path, category.name))
+<%
+    category_links = []
+    for category in post.categories:
+        if post.draft:
+            #For drafts, we don't write to the category dirs, so just write the categories as text
+            category_links.append(category.name)
+        else:
+            category_links.append("<a href='%s'>%s</a>" % (category.path, category.name))
 %>
-${", ".join(category_links)}
-% if bf.config.blog.disqus.enabled:
- | <a href="${post.permalink}#disqus_thread">View Comments</a>
-% endif
-</small><p/>
-  <div class="post_prose">
-    ${self.post_prose(post)}
-  </div>
+
+<a name="${post.slug}"></a>
+<h1>${post.title}</h1>
+<p class="post_date"><span style="margin-left: 0px;">${post.date.strftime("%d-%m-%Y - %I:%M %p")}</span> &#8226; <span>Categorias: ${", ".join(category_links)}</span> &#8226; <span><a href="${post.permapath()}">PERMALINK</a></span></p> 
+
+<div class="post_prose">
+  ${self.post_prose(post)}
 </div>
 
-<%def name="post_prose(post)">
-  ${post.content}
-</%def>
-
 <hr/>
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'rennerocha';
-    var disqus_developer = 0;
+    var disqus_developer = 1;
     var disqus_identifier = "${post.slug}";
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -40,10 +30,6 @@ ${", ".join(category_links)}
     })();
 </script>
 
-<hr/>
-<p>Todos artigos</p>
-<ul>
-% for post in bf.config.blog.posts:
-    <li><a href="${post.path}">${post.title}</a></li>
-% endfor
-</ul>
+<%def name="post_prose(post)">
+  ${post.content}
+</%def>
