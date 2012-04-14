@@ -38,7 +38,7 @@ print resposta_problema()
 $$/code
 
 Só que esta solução por força-bruta é extremamente ineficiente (tanto que rodando ela eu não 
-tive paciẽncia de esperar o fim da execução). Pesquisando um pouco, descobri que Euclides, a mais 
+tive paciência de esperar o fim da execução). Pesquisando um pouco, descobri que Euclides, a mais 
 de dois mil anos, já havia encontrado uma maneira melhor para gerar números pitagóricos (a dedução 
 desta relação pode ser vista 
 <a href="http://en.wikipedia.org/wiki/Pythagorean_triple#Geometry_of_Euclid.27s_formula">aqui</a>):
