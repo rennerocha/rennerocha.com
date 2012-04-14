@@ -21,7 +21,7 @@
             <li><a href="/sobre">Sobre</a></li>
             <li><a href="/projetos">Projetos</a></li>
             <li><a href="http://twitter.com/rennerocha">Twitter</a></li>
-            <li><a href="/rss">RSS</a></li>
+            <li><a href="/feed/index.xml">RSS</a></li>
           </ul>
         </div>
       </div>
