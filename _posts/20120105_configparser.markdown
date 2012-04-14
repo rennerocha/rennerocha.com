@@ -16,7 +16,7 @@ criado possui o arquivo *trac.ini* contendo a maioria das configurações necess
 Por ser altamente customizável, é interessante ter a possibilidade de alterar esses valores de 
 configuração de uma maneira automática.
 
-### Criando um arquivo de configuração
+## Criando um arquivo de configuração
 
 Em Python, em sua biblioteca padrão, existe o módulo **[ConfigParser](http://docs.python.org/library/configparser.html "ConfigParser")** 
 (renomeado para *configparser* no Python 3.0) que, através da classe *ConfigParser* fornece um conjunto de métodos para 
@@ -60,7 +60,7 @@ Após essas operações, teríamos um arquivo de configuração desta maneira:
 > outraopcao = valor   
 > numerico = 123   
 
-### Abrindo um arquivo de configuração já existente
+## Abrindo um arquivo de configuração já existente
 
 Até agora estamos criando um novo arquivo de configuração, porém normalmente o que queremos fazer é alterar 
 as configurações de um arquivo já existente. Se tivermos um arquivo chamado *config.ini*, utilizamos o método 
@@ -75,7 +75,7 @@ $$/code
 
 Feito isso, podemos manipular essa instância de *ConfigParser* da mesma maneira como já fizemos anteriormente.
 
-### Lendo seções e valores
+## Lendo seções e valores
 
 Após efetuar a leitura de um arquivo de configuração, queremos ser capazes de obter as informações 
 armazenadas nele. Por exemplo, se eu quiser saber todas as seções existentes do arquivo *config.ini* 
@@ -115,7 +115,7 @@ $$code(lang=python)
 <type 'int'>
 $$/code
 
-### Editando seções e valores
+## Editando seções e valores
 
 Como já foi apresentado, os métodos 
 **[add_section](http://docs.python.org/library/configparser.html#ConfigParser.RawConfigParser.add_section "add_section")** 
@@ -146,7 +146,7 @@ True
 [('numerico', '123')]
 $$/code
 
-### Armazenando o arquivo 
+## Armazenando o arquivo 
 
 A instância de ConfigParser é uma representação de um arquivo de configuração. Depois de 
 fazer a personalização desejada, é necessário salvá-lo no sistema de arquivos. Isso é feito utilizando o método
@@ -160,8 +160,9 @@ with open('config.ini', 'w') as cfgfile:
     config.write(cfgfile)
 $$/code
 
-### Exemplo
+## Exemplo
 
 Aqui temos um exemplo de como criar através de código um arquivo de configuração de uma aplicação 
 hipotetica, indicando dados de conexão do banco de dados e repositório: 
 **[https://gist.github.com/1590437](https://gist.github.com/1590437 "Exemplo de criação de arquivo INI")**
+
