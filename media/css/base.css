@@ -126,6 +126,11 @@ body {
     text-decoration: underline;
 }
 
+#arquivo ul li {
+    list-style: none;
+    margin: 15px;
+}
+
 #footer {
 	clear: both;
 	height: 30px;
