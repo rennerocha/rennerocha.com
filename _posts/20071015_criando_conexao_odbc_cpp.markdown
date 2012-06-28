@@ -1,24 +1,23 @@
 ---
 author: Renne Rocha
-categories: ProgramaÁ„o
-tags: C++, ODBC
+categories: C++, ODBC
 date: 2007/10/15 14:34:03
 permalink: http://rennerocha.com/2007/10/criando-uma-conexao-odbc-utilizando-cpp/
-title: Criando uma conex„o ODBC utilizando C++
+title: Criando uma conex√£o ODBC utilizando C++
 ---
-Ao escrever um cÛdigo que efetua uma interaÁ„o com um sistema de banco de dados, normalmente È necess·rio incluir trechos de cÛdigo especÌficos do banco de dados utilizado. Se vocÍ quiser utilizar um banco de dados Sybase, Access ou PostgreSQL, ser· necess·rio a escrita de trÍs cÛdigos diferentes.
+Ao escrever um c√≥digo que efetua uma intera√ß√£o com um sistema de banco de dados, normalmente √© necess√°rio incluir trechos de c√≥digo espec√≠ficos do banco de dados utilizado. Se voc√™ quiser utilizar um banco de dados Sybase, Access ou PostgreSQL, ser√° necess√°rio a escrita de tr√™s c√≥digos diferentes.
 
-Utilizando o <a href="http://en.wikipedia.org/wiki/ODBC">ODBC</a> (Open Data Base Connectivy), vocÍ far· chamadas a funÁıes da API do ODBC (combinadas com queries SQL). O gerenciador ODBC saber· como executar a funÁ„o desejada no banco de dados escolhido. … necess·rio apenas que vocÍ tenha instalado no seu computador, um driver ODBC especÌfico do banco de dados que vocÍ estar· utilizando.
+Utilizando o <a href="http://en.wikipedia.org/wiki/ODBC">ODBC</a> (Open Data Base Connectivy), voc√™ far√° chamadas a fun√ß√µes da API do ODBC (combinadas com queries SQL). O gerenciador ODBC saber√° como executar a fun√ß√£o desejada no banco de dados escolhido. √â necess√°rio apenas que voc√™ tenha instalado no seu computador, um driver ODBC espec√≠fico do banco de dados que voc√™ estar√° utilizando.
 
-Existem implementaÁıes de ODBC para v·rios sistemas operacionais, porÈm vamos tratar aqui apenas da implementaÁ„o da Microsoft (<a href="http://msdn2.microsoft.com/en-us/library/ms710252.aspx">Microsoft Open Database Connectivity (ODBC)</a>).
+Existem implementa√ß√µes de ODBC para v√°rios sistemas operacionais, por√©m vamos tratar aqui apenas da implementa√ß√£o da Microsoft (<a href="http://msdn2.microsoft.com/en-us/library/ms710252.aspx">Microsoft Open Database Connectivity (ODBC)</a>).
 
-Os passos b·sicos para efetuar uma conex„o a um base dados, efetuar um query e encerrar essa conex„o podem ser vistos no <a href="http://msdn2.microsoft.com/en-us/library/ms714078.aspx">fluxograma</a> abaixo.
+Os passos b√°sicos para efetuar uma conex√£o a um base dados, efetuar um query e encerrar essa conex√£o podem ser vistos no <a href="http://msdn2.microsoft.com/en-us/library/ms714078.aspx">fluxograma</a> abaixo.
 
-![Basic ODBC Application Steps](/img/20071015_odbc.jpg "Basic ODBC Application Steps")
+![Basic ODBC Application Steps](/media/img/20071015_odbc.jpg "Basic ODBC Application Steps")
 
-N„o vou explicar o funcionamento de cada uma dessas funÁıes (vocÍ pode pesquisar uma a uma se desejar). Acredito que um pequeno exemplo de cÛdigo em C++ possa ser muito mais did·tico para a utilizaÁ„o r·pida.
+N√£o vou explicar o funcionamento de cada uma dessas fun√ß√µes (voc√™ pode pesquisar uma a uma se desejar). Acredito que um pequeno exemplo de c√≥digo em C++ possa ser muito mais did√°tico para a utiliza√ß√£o r√°pida.
 
-Neste exemplo, uma conex„o com uma fonte de dados ODBC È realizada e o conte˙do de dois campos È buscado e exibido na tela (caso haja algum registro).
+Neste exemplo, uma conex√£o com uma fonte de dados ODBC √© realizada e o conte√∫do de dois campos √© buscado e exibido na tela (caso haja algum registro).
 
 <strong>Exemplo 1</strong> - Selecionando campos de uma tabela - Compilado no Visual C++ 6.0
 
@@ -34,7 +33,7 @@ int main(int argc, char* argv[])
     UCHAR campo1[100];
     UCHAR campo2[100];
 
-    // Query SQL que ser· executada
+    // Query SQL que ser√° executada
     unsigned char szSqlStr[255];
     strcpy((char*)szSqlStr, "SELECT campo1, campo2 FROM tabela WHERE condicao = '2'");
 
@@ -53,17 +52,17 @@ int main(int argc, char* argv[])
     // Alocando manipulador de ambiente
     retcode = SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &henv);
 
-    // Definir atributo de ambiente de vers„o do ODBC
-    retcode = SQLSetEnvAttr(henv, SQL_ATTR_ODBC_VERSION, (void*)SQL_OV_ODBC3, 0); 
- 
-    // Alocando manipulador de conex„o
-    retcode = SQLAllocHandle(SQL_HANDLE_DBC, henv, &hdbc); 
+    // Definir atributo de ambiente de vers√£o do ODBC
+    retcode = SQLSetEnvAttr(henv, SQL_ATTR_ODBC_VERSION, (void*)SQL_OV_ODBC3, 0);
 
-    // Conex„o com a fonte de dados
+    // Alocando manipulador de conex√£o
+    retcode = SQLAllocHandle(SQL_HANDLE_DBC, henv, &hdbc);
+
+    // Conex√£o com a fonte de dados
     retcode = SQLConnect(hdbc, szDSN, SQL_NTS, szUID, SQL_NTS, szPasswd, SQL_NTS); 
 
     // Alocando manipulador da query
-    retcode = SQLAllocHandle(SQL_HANDLE_STMT, hdbc, &hstmt); 
+    retcode = SQLAllocHandle(SQL_HANDLE_STMT, hdbc, &hstmt);
 
     // Executa a query
     retcode = SQLExecDirect(hstmt, szSqlStr, SQL_NTS);
@@ -86,7 +85,7 @@ int main(int argc, char* argv[])
     // Desconecta da fonte de dados
     retcode = SQLDisconnect(hdbc);
 
-    // Libera manipuladorde conex„o
+    // Libera manipuladorde conex√£o
     retcode = SQLFreeHandle(SQL_HANDLE_DBC, hdbc);
 
     // Libera manipulador de ambiente
@@ -95,3 +94,4 @@ int main(int argc, char* argv[])
     return 0;
 }
 $$/code
+
