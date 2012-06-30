@@ -18,7 +18,7 @@
     <li>Github: <a href="https://github.com/rennerocha/">https://github.com/rennerocha</a></li>
 </ul>
 
-<h2>Sobre este blog</h2>
+<h2>Sobre este blog...</h2>
 
 <p>Como tenho vários interesses na área de tecnologia, eu acabo fazendo várias experiências usando linguagens novas, tecnologias e metodologias diferentes ou mesmo utilizando ferramentas que já uso nos meus projetos. Além disso é comum eu resolver algum problema que eu considero interessante registrar a sua solução para ser usado como referência para mim e, se alguém estiver com o mesmo problema, para outras pessoas.</p>
 
