@@ -84,10 +84,15 @@ body {
 	width: 800px;
 }
 
+#content ul {
+    margin-left: 50px;
+}
+
 #content h1 {
 	font-size: 30px;
 	color: #203729;
     padding: 10px;
+    padding-left: 0px;
     margin-top: -30px;
 }
 
@@ -101,13 +106,11 @@ body {
 #content p {
     line-height: 20px;
     margin: 10px;
-    text-indent: 1em;
 }
 
 #content div {
     line-height: 20px;
     margin: 10px;
-    text-indent: 1em;
     padding: 10px;
 }
 
