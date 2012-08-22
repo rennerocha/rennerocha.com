@@ -1,7 +1,6 @@
-
     <meta charset="utf-8">
     <title>${bf.config.blog.name}</title>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,500' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/media/css/base.css' type='text/css' />
 
     <!-- RSS links -->
