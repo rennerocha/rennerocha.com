@@ -10,8 +10,8 @@ config = {"name": "Syntax Highlighter",
           "description": "Highlights blocks of code based on syntax",
           "author": "Ryan McGuire",
           "css_dir": "/css",
-          "style": "monokai",
-          "preload_styles": ['monokai']}
+          "style": "native",
+          "preload_styles": ['native']}
 
 def init():
     #This filter normally only loads pygments styles when needed.
@@ -153,9 +153,9 @@ def run(src):
             if linenums.lower().strip() == "true":
                 linenums = True
             else:
-                linenums = False
+                linenums = True
         except:
-            linenums = False
+            linenums = True
         try:
             style = args['style']
         except KeyError:

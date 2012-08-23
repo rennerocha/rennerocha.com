@@ -150,3 +150,7 @@ body {
 	font-size: 12px;
 	text-align: right;
 }
+
+.code {
+    font-family: 'Ubuntu Mono';
+}
