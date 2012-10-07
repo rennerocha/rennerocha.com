@@ -10,8 +10,8 @@
 %>
 
 <a name="${post.slug}"></a>
-<h1>${post.title}</h1>
-<p class="post_date"><span style="margin-left: 0px;">${post.date.strftime("%d-%m-%Y - %I:%M %p")}</span> &#8226; <span>Categorias: ${", ".join(category_links)}</span> &#8226; <span><a href="${post.permapath()}">PERMALINK</a></span></p> 
+<h3><a href="${post.permapath()}">${post.title}</a></h3>
+<p class="post_date"><span style="margin-left: 0px;">${post.date.strftime("%d-%m-%Y - %I:%M %p")}</span> &#8226; <span>${", ".join(category_links)}</span></p> 
 
 <div class="post_prose">
   ${self.post_prose(post)}
