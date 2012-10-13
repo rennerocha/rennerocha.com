@@ -9,6 +9,8 @@
     <!-- Syntax Highlight -->
     <link rel='stylesheet' href='${bf.config.filters.syntax_highlight.css_dir}/pygments_${bf.config.filters.syntax_highlight.style}.css' type='text/css' />
 
+    <link href="/media/css/extra.css" rel="stylesheet">
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22087729-1']);
