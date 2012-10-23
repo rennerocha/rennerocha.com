@@ -51,5 +51,4 @@ encontros irão se tornar parte dos **evento regulares** do LHC. A princípio
 [eu](/sobre) estarei organizando esses encontros.
 
 Todo **primeiro sábado do mês**, das 10h às 12h teremos uma sessão
-de Dojo. O próximo já está agendado! Será no dia **3 de novembro**.
-Não é necessário se inscrever para participar, apenas aparecer!
+de Dojo. O próximo já está agendado! <del>Será no dia **3 de novembro**.</del> **ATUALIZAÇÃO: Tendo em vista o feriado do dia 2 de novembro, este mês, excepcionalmente o Dojo será no dia 10 de novembro**. Não é necessário se inscrever para participar, apenas aparecer!
