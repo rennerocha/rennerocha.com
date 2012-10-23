@@ -27,10 +27,18 @@
             <li><a href="/feed/index.xml">RSS</a></li>
           </ul>
 
-          <div style="margin-top:50px;"> 
+          <div style="margin-top:50px;">
 <script type="text/javascript"><!--
-amazon_ad_tag = "rennerochacom-20"; amazon_ad_width = "120"; amazon_ad_height = "240";//--></script>
-<script type="text/javascript" src="http://www.assoc-amazon.com/s/ads.js"></script>
+google_ad_client = "ca-pub-9138703013890172";
+/* rennerocha.com */
+google_ad_slot = "8154609387";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
           </div>
         </div>
       </div>
