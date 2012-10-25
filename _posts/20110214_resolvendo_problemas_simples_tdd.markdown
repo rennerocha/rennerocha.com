@@ -259,3 +259,7 @@ neste momento. Mas com esse conjunto de código podemos continuar o desenvolvime
 refatorações até obter uma resposta mais rápida.
 
 O código completo está em: <a href="https://github.com/rennerocha/euler/tree/master/problema_14">https://github.com/rennerocha/euler/tree/master/problema_14</a>
+
+Quem quiser se aprofundar no estudo de TDD, aqui você pode encontrar algumas referências para iniciar o estudo:
+
+- [Referências para estudar TDD](http://rennerocha.com/2012/10/referencias-para-estudar-tdd)
