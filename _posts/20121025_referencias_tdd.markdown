@@ -3,6 +3,7 @@ author: Renne Rocha
 categories: TDD
 tags: TDD
 date: 2012/10/25 21:51:02
+permalink: http://rennerocha.com/2012/10/referencias-para-estudar-tdd
 title: Referências para estudar TDD
 ---
 _Test-Driven Development_ (TDD) é uma técnica para desenvolvimento de software que define um processo
