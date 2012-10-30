@@ -21,7 +21,6 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'rennerocha';
-    var disqus_developer = 1;
     var disqus_identifier = "${post.slug}";
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
