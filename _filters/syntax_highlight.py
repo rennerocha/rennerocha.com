@@ -10,8 +10,8 @@ config = {"name": "Syntax Highlighter",
           "description": "Highlights blocks of code based on syntax",
           "author": "Ryan McGuire",
           "css_dir": "/css",
-          "style": "native",
-          "preload_styles": ['native']}
+          "style": "default",
+          "preload_styles": ['default']}
 
 def init():
     #This filter normally only loads pygments styles when needed.
