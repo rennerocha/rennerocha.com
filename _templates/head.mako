@@ -1,5 +1,10 @@
     <meta charset="utf-8">
-    <title>${bf.config.blog.name}</title>
+    <title>
+        ${bf.config.blog.name}
+%if post and post.title:
+ - ${post.title}
+%endif
+    </title>
     <link href="/media/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- RSS links -->
