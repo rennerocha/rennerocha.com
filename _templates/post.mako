@@ -21,7 +21,8 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'rennerocha';
-    var disqus_identifier = "${post.slug}";
+    var disqus_url = 'http://rennerocha.com';
+    var disqus_identifier = "${post.permalink}";
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
