@@ -1,9 +1,10 @@
 ---
-author: Renne Rocha
-categories: PowerBuilder
+title: "Iniciando o Internet Explorer a partir do PowerBuilder"
 date: 2007/09/21 18:34:03
+author: Renne Rocha
+categories: Computação
+tags: powerbuilder
 permalink: http://rennerocha.com/2007/09/iniciando-internet-explorer-a-partir-do-powerbuilder/
-title: Iniciando o Internet Explorer a partir do PowerBuilder
 ---
 Esta semana tive que iniciar um projeto em que a principal funcionalidade seria executar a partir de um botão em uma window o Internet Explorer na máquina do cliente, abrindo uma determinada URL. Pensei em usar inicialmente a função Run(), porém uma das limitações do projeto era que a janela do navegador não poderia ter nenhuma barra de ferramentas disponível (endereço, status, favoritos, etc)
 
