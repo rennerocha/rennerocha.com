@@ -4,7 +4,7 @@ date: 2013/01/30 12:22:00
 author: Renne Rocha
 categories: Computação
 tags: django, testes, tdd
-permalink: http://rennerocha.com/2013/01/como-eu-test-formularios-no-django
+permalink: http://rennerocha.com/2013/01/como-eu-testo-formularios-no-django
 ---
 Uma das primeiras dúvidas de quem está começando a desenvolver aplicações em Django e quer
 ter uma boa cobertura de testes é saber que tipo de testes devem ser escritos.
