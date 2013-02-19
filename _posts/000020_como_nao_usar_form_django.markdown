@@ -41,11 +41,11 @@ $$/code
 Neste caso, quando submetemos este formulário, o atributo _request.POST_ é uma
 instância de _django.http.QueryDict_, avaliado como _True_. Deste modo o formulário
 é instanciado com os valores informados pelo usuário preenchidos podendo ser
-validado (_[https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](bound)_).
+validado ([https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](bound form)).
 
 Caso a requisição não seja pelo método POST, este atributo não existe. O
 formulário é instanciado com o parâmetro _None_ criando um formulário vazio
-(_[https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](unbound)_)
+([https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](unbound form))
 que nunca será válido por não possuir dados.
 
 Aparentemente é uma boa idéia, já que diminuímos a quantidade de linhas de código
@@ -68,4 +68,4 @@ $$/code
 Renderizando esse formulário temos um conjunto de _radio buttons_. Se não selecionarmos
 nenhum deles e submetermos o formulário o _QueryDict_ de _request.POST_ é vazio, sendo
 avaliado como _False_ fazendo com que eles seja instanciado com o parâmetro _None_ que nunca
-será válido por ser _[https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](unbound)_.
+será válido por ser [https://docs.djangoproject.com/en/dev/ref/forms/api/#bound-and-unbound-forms](unbound).
