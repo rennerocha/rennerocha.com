@@ -1,6 +1,6 @@
 ---
 title: "Como (não) utilizar formulários no Django"
-date: 2013/02/15 13:37:00
+date: 2013/02/19 13:37:00
 author: Renne Rocha
 categories: Django
 tags: django, forms
@@ -23,7 +23,7 @@ def my_view(request):
             return redirect('/success')
     else:
         form = MyForm()
-    return render(request, 'template.html', {'form': form})
+    return render('template.html', {'form': form}, request=request)
 $$/code
 
 Neste exemplo, temos dois blocos _if_ aninhados e a variável _form_ é instanciada em dois
@@ -35,7 +35,7 @@ def my_view(request):
     if form.is_valid():
         do_something()
         return redirect('/success')
-    return render(request, 'template.html', {'form': form})
+    return render('template.html', {'form': form}, request=request)
 $$/code
 
 Neste caso, quando submetemos este formulário, o atributo _request.POST_ é uma
