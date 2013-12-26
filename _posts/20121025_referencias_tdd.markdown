@@ -54,7 +54,7 @@ para fazer com que os testes guiem a estrutura do código orientado a objetos, e
 Mock descobrir e descrever relações e interações entre esses objetos. Para saber mais sobre a diferença entre a
 escola Londrina e a escola Clássica de TDD, [leia este artigo](http://codemanship.co.uk/parlezuml/blog/?postid=987).
 
-**[Test-Driven Development: Teste e Design no Mundo Real](http://www.casadocodigo.com.br/products/livro-tdd)**
+**[Test-Driven Development: Teste e Design no Mundo Real](https://casadocodigo.refersion.com/l/847.1482)**
 
 _Autor_: Mauricio Aniche
 
