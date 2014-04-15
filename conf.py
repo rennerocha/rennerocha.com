@@ -8,7 +8,7 @@ import tinkerer.paths
 # **************************************************************
 
 # Change this to the name of your blog
-project = 'My blog'
+project = 'Renne Roch'
 
 # Change this to the tagline of your blog
 tagline = 'Add intelligent tagline here'
@@ -17,20 +17,20 @@ tagline = 'Add intelligent tagline here'
 description = 'This is an awesome blog'
 
 # Change this to your name
-author = 'Winston Smith'
+author = 'Renne Rocha'
 
 # Change this to your copyright string
-copyright = '1984, ' + author
+copyright = '2014, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'http://127.0.0.1/blog/html/'
+website = 'http://rennerocha.com/'
 
 # **************************************************************
 # More tweaks you can do
 # **************************************************************
 
 # Add your Disqus shortname to enable comments powered by Disqus
-disqus_shortname = None
+disqus_shortname = rennerocha
 
 # Change your favicon (new favicon goes in _static directory)
 html_favicon = 'tinkerer.ico'
@@ -46,10 +46,10 @@ html_theme_options = { }
 rss_service = None
 
 # Generate full posts for RSS feed even when using "read more"
-rss_generate_full_posts = False
+rss_generate_full_posts = True
 
 # Number of blog posts per page
-posts_per_page = 10
+posts_per_page = 1
 
 # Character use to replace non-alphanumeric characters in slug
 slug_word_separator = '_'
