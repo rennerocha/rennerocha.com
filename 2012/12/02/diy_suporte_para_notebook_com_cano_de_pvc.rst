@@ -1,16 +1,9 @@
-+---------------------------------------------------------------------------------------+
-| title: "DIY: Suporte para notebook com cano de PVC"                                   |
-+---------------------------------------------------------------------------------------+
-| date: 2012/12/02 19:21:38                                                             |
-+---------------------------------------------------------------------------------------+
-| author: Renne Rocha                                                                   |
-+---------------------------------------------------------------------------------------+
-| categories: DIY                                                                       |
-+---------------------------------------------------------------------------------------+
-| tags: LHC, notebook, pvc                                                              |
-+---------------------------------------------------------------------------------------+
-| permalink: http://rennerocha.com/2012/12/diy--suporte-para-notebook-com-cano-de-pvc   |
-+---------------------------------------------------------------------------------------+
+DIY: Suporte para notebook com cano de PVC
+
+.. author:: default
+.. categories:: none
+.. tags:: none
+.. coments::
 
 Um suporte para notebook é muito útil para quem trabalha o dia todo no
 computador e quer mantê-lo em uma posição mais confortável com a tela na
@@ -23,37 +16,33 @@ Existem diversas opções no mercado, custando a partir de R$30
 alguns projetos de suportes feitos com canos de PVC e resolvi fazer o
 meu. Com menos de R$7 comprei os materiais necessários (cano e
 cotovelos), peguei emprestado um cortador de cano de PVC (você pode usar
-uma uma `serrinha
-amarela <http://www.copaautopecas.com.br/index.php?productID=974>`__ no
-lugar, mas dá um pouquinho mais de trabalho para cortar) e em menos de
-30 minutos meu suporte estava pronto!
+uma `serrinha amarela`_ no lugar, mas dá um pouquinho mais de trabalho 
+para cortar) e em menos de 30 minutos meu suporte estava pronto!
 
 Materiais Necessários
 ^^^^^^^^^^^^^^^^^^^^^
 
--  1 cano de PVC de 20mm
--  10 cotovelos de 90 graus
+* 1 cano de PVC de 20mm
+* 10 cotovelos de 90 graus
 
 Como fazer
 ^^^^^^^^^^
-
 Corte o cano de PVC com as seguintes medidas:
 
--  2 partes de 29cm
--  2 partes de 25cm
--  2 partes de 10cm
--  2 partes de 5cm
--  2 partes de 2.5cm
+* 2 partes de 29cm
+* 2 partes de 25cm
+* 2 partes de 10cm
+* 2 partes de 5cm
+* 2 partes de 2.5cm
 
 Eu calculei essas medidas com base no meu notebook que tem 38cm x 26cm.
 Se seu notebook for menor (ou maior), você precisa adaptar as medidas.
 Também cortei ele de modo a parte mais alta do suporte ficar a cerca de
 10cm de altura.
 
-.. figure:: /media/photos/000017_materiais.jpg
+.. figure:: img/materiais.jpg
    :alt: Materiais para montagem
 
-   Materiais para montagem
 Montagem
 ^^^^^^^^
 
@@ -74,5 +63,10 @@ Mas no fim resolvi deixar ele na cor "natural" de cano de PVC :-) Talvez
 um próximo (já fizeram sugestões de como fazer ele ter ajuste de altura)
 eu faça ele colorido.
 
-.. |Suporte montado - 1| image:: /media/photos/000017_montado_vazio.jpg
-.. |Suporte montado - 2| image:: /media/photos/000017_montado_com_notebook.jpg
+.. figure:: img/suporte_montado_vazio.jpg
+   :alt: Suporte montado 1
+
+.. figure:: img/suporte_montado_com_notebook.jpg
+   :alt: Suporte montado 2
+
+.. _serrinha amarela: http://www.copaautopecas.com.br/index.php?productID=974
