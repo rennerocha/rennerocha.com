@@ -8,7 +8,7 @@ import tinkerer.paths
 # **************************************************************
 
 # Change this to the name of your blog
-project = 'Renne Roch'
+project = 'Renne Rocha'
 
 # Change this to the tagline of your blog
 tagline = 'Add intelligent tagline here'
@@ -30,7 +30,7 @@ website = 'http://rennerocha.com/'
 # **************************************************************
 
 # Add your Disqus shortname to enable comments powered by Disqus
-disqus_shortname = rennerocha
+disqus_shortname = 'rennerocha'
 
 # Change your favicon (new favicon goes in _static directory)
 html_favicon = 'tinkerer.ico'
